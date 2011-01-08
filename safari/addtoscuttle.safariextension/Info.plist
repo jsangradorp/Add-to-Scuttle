@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Yokiyoki</string>
+	<key>CFBundleDisplayName</key>
+	<string>Add to Scuttle</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yokiyoki.addtoscuttle</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.3</string>
+	<key>CFBundleVersion</key>
+	<string>1.3</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Context Menu Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>addToScuttle</string>
+				<key>Identifier</key>
+				<string>addtoscuttle-contextmenu-option</string>
+				<key>Title</key>
+				<string>Add to Scuttle</string>
+			</dict>
+		</array>
+		<key>Global Page</key>
+		<string>addtoscuttle.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>addToScuttle</string>
+				<key>Identifier</key>
+				<string>addtoscuttle-toolbar-button</string>
+				<key>Image</key>
+				<string>toolbar_button.png</string>
+				<key>Label</key>
+				<string>Add to Scuttle</string>
+				<key>Palette Label</key>
+				<string>Add to Scuttle</string>
+				<key>Tool Tip</key>
+				<string>Add current page to Scuttle</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>Start</key>
+			<array>
+				<string>addtoscuttle.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>Adds current page to Scuttle</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Allowed Domains</key>
+			<array>
+				<string>*</string>
+			</array>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>Some</string>
+		</dict>
+	</dict>
+	<key>Website</key>
+	<string>http://www.yokiyoki.com</string>
+</dict>
+</plist>

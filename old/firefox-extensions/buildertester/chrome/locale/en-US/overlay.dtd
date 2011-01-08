@@ -1,0 +1,8 @@
+<!ENTITY buildertester.label "Your localized menuitem">
+<!ENTITY buildertesterContext.label "Your Menuitem">
+<!ENTITY buildertesterContext.accesskey "Y">
+<!ENTITY buildertesterToolbarButton.label "Your Toolbar Button">
+<!ENTITY buildertesterToolbarButton.tooltip "This is your toolbar button!">
+<!ENTITY buildertesterSidebar.label "Your Sidebar">
+<!ENTITY buildertesterToolbar.name  "example">
+<!ENTITY buildertesterToolbar.label "This is an example toolbar. You can hide it under View &gt; toolbars &gt; &buildertesterToolbar.name;">

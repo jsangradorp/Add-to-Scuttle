@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://addtoscuttle/locale/translations.dtd">
+<prefwindow
+     title="&addtoscuttlepreferences;"
+     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<prefpane label="&addtoscuttlepreferences;">
+		<preferences>
+			<preference id="add-to-scuttle-posturl" name="extensions.addtoscuttle.posturl" type="string"/>
+			<preference id="add-to-scuttle-username" name="extensions.addtoscuttle.username" type="string"/>
+		</preferences>
+
+		<groupbox>
+			<caption label="&settings;"/>
+			<grid>
+				<columns>
+					<column flex="4"/>
+					<column flex="1"/>
+				</columns>
+				<rows>
+					<row>
+						<label control="posturl">&posturl;</label>
+						<textbox id="posturl" preference="add-to-scuttle-posturl"/>
+					</row>
+					<row>
+						<label control="username">&username;</label>
+						<textbox id="username" preference="add-to-scuttle-username"/>
+					</row>
+				</rows>
+			</grid>
+		</groupbox>	
+
+	</prefpane>
+
+</prefwindow>

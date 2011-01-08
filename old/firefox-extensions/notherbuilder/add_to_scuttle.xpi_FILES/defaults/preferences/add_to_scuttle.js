@@ -1,0 +1,1 @@
+pref("extensions.add_to_scuttle.foo", "bar");

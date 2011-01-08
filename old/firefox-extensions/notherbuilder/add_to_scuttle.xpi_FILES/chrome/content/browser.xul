@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" xmlns:html="http://www.w3.org/1999/xhtml" id="add_to_scuttle-overlay">
+
+    <script type="application/x-javascript" src="chrome://add_to_scuttle/content/add_to_scuttle.js"></script>
+
+    <statusbar id="status-bar">
+        <statusbarpanel insertafter="statusbar-progresspanel" context="add_to_scuttle-menu">
+            <image id="add_to_scuttle-statusicon" style="cursor:pointer;"
+                src="chrome://add_to_scuttle/content/icon.png"
+            	tooltiptext="Run Add to Scuttle"
+            	onclick="if(!event.button) { add_to_scuttle.run() }"
+            	/>
+		</statusbarpanel>
+
+        <menupopup id="add_to_scuttle-menu">
+            <menuitem label="Add to Scuttle Homepage" oncommand="add_to_scuttle.goHome()"/>
+            <menuitem label="About" oncommand="add_to_scuttle.showAbout()" />
+            <menuseparator/>
+            <menuitem label="Run Add to Scuttle" oncommand="add_to_scuttle.run()" />
+        </menupopup>
+
+	</statusbar>
+
+</overlay>

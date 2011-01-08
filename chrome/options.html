@@ -1,0 +1,43 @@
+<html>
+<head><title>Add to Scuttle Options</title></head>
+<script type="text/javascript">
+
+// Saves options to localStorage.
+function save_options() {
+  localStorage["postUrl"] = document.getElementById("postUrl").value;
+  localStorage["username"] = document.getElementById("username").value;
+
+  // Update status to let user know options were saved.
+  var status = document.getElementById("status");
+  status.innerHTML = "Options Saved.";
+  setTimeout(function() {
+    status.innerHTML = "";
+  }, 750);
+}
+
+// Restores select box state to saved value from localStorage.
+function restore_options() {
+  var postUrl = localStorage["postUrl"];
+  if (!postUrl) {
+    return;
+  }
+  document.getElementById("postUrl").value = postUrl;
+
+  var username = localStorage["username"];
+  if (!username) {
+    return;
+  }
+  document.getElementById("username").value = username;
+}
+
+</script>
+
+<body onload="restore_options()">
+
+Post URL: <input id="postUrl" value="http://scuttle.yokiyoki.com/bookmarks.php"><br/>
+Username: <input id="username" value="yokiyoki"><br/>
+<br>
+<button onclick="save_options()">Save</button>
+</body>
+</html>
+

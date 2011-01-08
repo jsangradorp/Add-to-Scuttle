@@ -1,0 +1,11 @@
+<script type="text/javascript">
+function addToScuttle(tab) {
+  chrome.tabs.getSelected(null, function(tab) {
+    chrome.tabs.sendRequest(tab.id, {greeting: "hello"}, function(response) {
+      console.log(response.farewell);
+    });
+  });
+}
+chrome.browserAction.onClicked.addListener(addToScuttle);
+</script>
+

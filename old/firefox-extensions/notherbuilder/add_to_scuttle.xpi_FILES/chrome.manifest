@@ -1,0 +1,3 @@
+content		add_to_scuttle		chrome/content/
+
+overlay		chrome://browser/content/browser.xul		chrome://add_to_scuttle/content/browser.xul

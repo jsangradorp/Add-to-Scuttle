@@ -1,0 +1,7 @@
+content   buildertester                 chrome/content/
+skin      buildertester   classic/1.0   chrome/skin/
+locale    buildertester   en-US         chrome/locale/en-US/
+
+
+overlay   chrome://browser/content/browser.xul   chrome://buildertester/content/ff-overlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://buildertester/skin/overlay.css

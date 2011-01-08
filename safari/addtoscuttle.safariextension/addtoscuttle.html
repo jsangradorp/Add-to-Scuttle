@@ -1,0 +1,34 @@
+<script type="text/javascript">
+function addToScuttle(event) {
+	var postUrl = safari.extension.settings.postUrl;
+	var username = safari.extension.settings.username;
+	if (event.command === "addToScuttle") {
+		if (safari.extension.settings.guitype === "popup") {
+			var messageData = [postUrl, username];
+			event.target.browserWindow.activeTab.page.dispatchMessage("openScuttlePopup", messageData);
+		}
+		else {
+			var content = event.target.browserWindow.activeTab;
+			var currentURL = content.url;
+			var currentTitle = content.title;
+			if (currentURL) {
+				var a = encodeURIComponent(currentURL);
+				var t = encodeURIComponent(currentTitle);
+				//var d = encodeURIComponent(window.getSelection());
+				safari.application.openBrowserWindow().activeTab.url = postUrl+'/'+username+'?action=add&popup=1&address='+a+'&title='+t/* +'&description='+d */;
+			}
+		}
+	}
+}
+
+function validateAddToScuttle(event)
+{
+	if (event.command === "addToScuttle") {
+		// Disable the button if there is no URL loaded in the tab.
+		event.target.disabled = !event.target.browserWindow.activeTab.url;
+	}
+}
+
+safari.application.addEventListener("command", addToScuttle, false);
+safari.application.addEventListener("validate", validateAddToScuttle, false);
+</script>

@@ -1,0 +1,43 @@
+{
+  // Required
+  "name": "Add to Scuttle",
+  "version": "1.0",
+
+  // Recommended
+  "description": "Add current page to Scuttle",
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+  ////"default_locale": "en",
+
+  // Pick one (or none)
+  "browser_action": {
+    "default_icon": "icon19.png", // required
+    "default_title": "Add to Scuttle"////,      // optional; shown in tooltip
+    ////"default_popup": "popup.html"        // optional
+  },
+  ////"page_action": {...},
+  ////"theme": {...},
+  ////"app": {...},
+
+  // Add any of these that you need
+  "background_page": "addtoscuttle.html",
+  ////"chrome_url_overrides": {...},
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": [/*"mystyles.css"*/],
+      "js": [/*"jquery.js",*/ "addtoscuttle.js"]
+    }
+  ],
+  "homepage_url": "http://scuttle.yokiyoki.com",
+  ////"incognito": "spanning" or "split",
+  ////"key": "publicKey",
+  ////"minimum_chrome_version": "versionString",
+  ////"omnibox": { "keyword" : "aString" },
+  "options_page": "options.html",
+  "permissions": [ "tabs" ]////,
+  ////"plugins": [...],
+  ////"update_url": "http://path/to/updateInfo.xml"
+}
+

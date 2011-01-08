@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://addtoscuttle/skin/skin.css" type="text/css"?>
+<!DOCTYPE addtoscuttle SYSTEM "chrome://addtoscuttle/locale/translations.dtd">
+<overlay id="addtoscuttle-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+		<script src="addToScuttle.js" />
+
+		<menupopup id="menu_ToolsPopup">
+			<menuitem label="&runaddtoscuttle;" key="add-to-scuttle-run-key" oncommand="addToScuttle.run()"/>
+		</menupopup>
+
+		<keyset>
+			<key id="add-to-scuttle-run-key" modifiers="alt shift" key="D" oncommand="addToScuttle.run()"/>
+		</keyset>
+
+		<toolbarpalette id="BrowserToolbarPalette">
+			<toolbarbutton id="addtoscuttle-toolbar-button" label="&appname;" tooltiptext="&runaddtoscuttle;" oncommand="addToScuttle.run()"/>
+		</toolbarpalette>
+</overlay>

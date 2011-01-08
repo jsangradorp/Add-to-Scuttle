@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>DefaultValue</key>
+		<string>http://scuttle.yokiyoki.com/bookmarks.php</string>
+		<key>Key</key>
+		<string>postUrl</string>
+		<key>Title</key>
+		<string>Post URL</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>yokiyoki</string>
+		<key>Key</key>
+		<string>username</string>
+		<key>Title</key>
+		<string>User Name</string>
+		<key>Type</key>
+		<string>TextField</string>
+	</dict>
+	<dict>
+		<key>DefaultValue</key>
+		<string>popup</string>
+		<key>Key</key>
+		<string>guitype</string>
+		<key>Title</key>
+		<string>GUI</string>
+		<key>Titles</key>
+		<array>
+			<string>Popup</string>
+			<string>Window</string>
+		</array>
+		<key>Type</key>
+		<string>RadioButtons</string>
+		<key>Values</key>
+		<array>
+			<string>popup</string>
+			<string>window</string>
+		</array>
+	</dict>
+</array>
+</plist>

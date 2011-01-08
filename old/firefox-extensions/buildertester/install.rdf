@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>buildertester@yokiyoki.com</em:id>
+    <em:type>2</em:type>
+    <em:name>Builder Tester</em:name>
+    <em:version>1.1</em:version>
+    <em:creator>Yokiyoki</em:creator>
+    <em:contributor></em:contributor>
+    <em:description>This is an extension used to test the builder</em:description>
+    <em:aboutURL>chrome://buildertester/content/about.xul</em:aboutURL>
+    <em:optionsURL>chrome://buildertester/content/options.xul</em:optionsURL>
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- Firefox -->
+        <em:minVersion>2.0</em:minVersion>
+        <em:maxVersion>4.0b9pre</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

@@ -1,0 +1,9 @@
+content     addtoscuttle    chrome/content/
+content     addtoscuttle    chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://addtoscuttle/content/browser.xul
+
+locale	addtoscuttle	en-US	locale/en-US/
+locale	addtoscuttle	es-ES	locale/es-ES/
+
+skin	addtoscuttle	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://addtoscuttle/skin/skin.css
